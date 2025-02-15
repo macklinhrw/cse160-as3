@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1</title>
+    <link href="./src/style.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-slate-700 text-gray-50">
+    <main class="p-4">
+      <script src="src/asg1.ts" type="module"></script>
+      <script src="src/lib/webgl-utils.js"></script>
+      <script src="src/lib/webgl-debug.js"></script>
+      <script src="src/lib/cuon-matrix-cse160.js" type="module"></script>
+      <script src="src/lib/cuon-utils.js" type="module"></script>
+      <div class="flex">
+        <div class="flex flex-col mx-auto">
+          <div class="flex mx-auto">
+            <canvas
+              class="rounded-sm border bg-black border-gray-400"
+              id="webgl"
+              width="400"
+              height="400"
+            >
+              Please use a browser that supports "canvas"
+            </canvas>
+          </div>
+          <div>
+            <p id="numdot" class="text-gray-400"></p>
+          </div>
+
+          <div class="flex flex-col py-2 space-y-2 w-fit">
+            <button
+              id="b_toggle_joint1_animation"
+              class="py-1 px-2 bg-gray-400 rounded hover:bg-gray-500"
+            >
+              Toggle Joint 1 Animation
+            </button>
+            <button
+              id="b_toggle_joint2_animation"
+              class="py-1 px-2 bg-gray-400 rounded hover:bg-gray-500"
+            >
+              Toggle Joint 2 Animation
+            </button>
+            <button
+              id="b_toggle_joint3_animation"
+              class="py-1 px-2 bg-gray-400 rounded hover:bg-gray-500"
+            >
+              Toggle Joint 3 Animation
+            </button>
+          </div>
+          <div class="py-2">
+            <div class="flex flex-col py-2">
+              <div class="flex">
+                <label for="slider_joint_1" class="w-32">Joint 1</label>
+                <input
+                  type="range"
+                  min="-45"
+                  max="45"
+                  value="0"
+                  id="slider_joint_1"
+                />
+              </div>
+              <div class="flex">
+                <label for="slider_joint_2" class="w-32">Joint 2</label>
+                <input
+                  type="range"
+                  min="-45"
+                  max="45"
+                  value="0"
+                  id="slider_joint_2"
+                />
+              </div>
+              <div class="flex">
+                <label for="slider_joint_3" class="w-32">Joint 3</label>
+                <input
+                  type="range"
+                  min="-45"
+                  max="45"
+                  value="0"
+                  id="slider_joint_3"
+                />
+              </div>
+              <div class="flex">
+                <label for="slider_camera_angle" class="w-32"
+                  >Camera Angle</label
+                >
+                <input
+                  type="range"
+                  min="0"
+                  max="90"
+                  value="5"
+                  id="slider_camera_angle"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
