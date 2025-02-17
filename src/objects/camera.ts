@@ -27,7 +27,7 @@ export default class Camera {
     this.moveSpeed = 0.5;
     this.rotationSpeed = 0.15;
 
-    window.addEventListener("resize", (e) => {
+    window.addEventListener("resize", (_) => {
       this.aspect = canvas.width / canvas.height;
 
       this.calculateViewProjection();

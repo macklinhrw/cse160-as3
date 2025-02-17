@@ -6,7 +6,7 @@ import {
   convertCoordinatesEventToGL,
   sendTextToHTML as sendTextToHtml,
 } from "./utils";
-import { HtmlUi, UiElement } from "./ui/ui";
+import { HtmlUi } from "./ui/ui";
 import { FullWidthContainer } from "./ui/fullWidthContainer";
 import { Button } from "./ui/button";
 import { PokemonGame } from "./lib/pokemon";
