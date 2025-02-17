@@ -28,7 +28,7 @@ export class World {
     this.floor.matrix.translate(0, -0.5, 0.0);
     this.floor.matrix.scale(40, 0, 40);
     this.floor.matrix.translate(-0.5, 0, -0.5);
-    this.floor.setImage("src/textures/grass.png", 0);
+    this.floor.setImage("grass.png", 0);
     this.floor.textureNum = 0;
     this.floor.render();
 

@@ -36,7 +36,7 @@ export class PokemonGame {
     this.initUi();
 
     // Play audio
-    this.audio = new Audio("src/audio/pokemon-battle.mp3");
+    this.audio = new Audio("pokemon-battle.mp3");
   }
 
   initUi() {

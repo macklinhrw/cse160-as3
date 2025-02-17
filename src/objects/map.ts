@@ -67,7 +67,7 @@ export class Map {
   render() {
     const body = new Cube();
     body.color = [0.8, 1.0, 1.0, 1.0];
-    body.setImage("src/textures/dirt.jpg", 1);
+    body.setImage("dirt.jpg", 1);
     body.textureNum = 1;
     for (let x = 0; x < 32; x++) {
       for (let y = 0; y < 32; y++) {
