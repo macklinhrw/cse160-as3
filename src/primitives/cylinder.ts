@@ -1,6 +1,6 @@
-import { Matrix4 } from "./lib/cuon-matrix-cse160";
-import { gl, u_FragColor, u_ModelMatrix } from "./asg1";
-import { drawTriangle3D as drawTriangle } from "./triangle";
+import { Matrix4 } from "../lib/cuon-matrix-cse160";
+import { gl, u_FragColor, u_ModelMatrix } from "../asg3";
+import { drawTriangle3D as drawTriangle } from "../primitives/triangle";
 
 export class Cylinder {
   vertices: Float32Array;

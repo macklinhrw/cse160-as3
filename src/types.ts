@@ -1,6 +1,6 @@
-import { Circle } from "./circle";
-import { Point } from "./point";
-import { Triangle } from "./triangle";
+import { Circle } from "./primitives/circle";
+import { Point } from "./primitives/point";
+import { Triangle } from "./primitives/triangle";
 
 // Types
 export type Coordinate = [number, number, number?];

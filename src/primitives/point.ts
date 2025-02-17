@@ -1,5 +1,5 @@
-import { Color, Coordinate } from "./types";
-import { gl, a_Position, u_FragColor, u_Size, program } from "./asg1";
+import { Color, Coordinate } from "../types";
+import { gl, a_Position, u_FragColor, u_Size, program } from "../asg3";
 
 export class Point {
   type: "point";

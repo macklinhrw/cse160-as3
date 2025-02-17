@@ -27,7 +27,7 @@ export class Vector4 {
 export class Matrix4 {
   constructor(opt_src?: any);
   elements: Float32Array;
-  setIdentity: Matrix4;
+  setIdentity(): Matrix4;
   set(src: Matrix4): Matrix4;
   multiply(other: Matrix4): Matrix4;
   concat(other: Matrix4): Matrix4;

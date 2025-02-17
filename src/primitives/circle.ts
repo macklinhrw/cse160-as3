@@ -1,5 +1,5 @@
-import { Color, Coordinate } from "./types";
-import { gl, u_FragColor, program } from "./asg1";
+import { Color, Coordinate } from "../types";
+import { gl, u_FragColor, program } from "../asg3";
 import { drawTriangle } from "./triangle";
 
 export class Circle {
